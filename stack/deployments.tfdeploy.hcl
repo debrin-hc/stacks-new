@@ -4,7 +4,7 @@ identity_token "aws" {
 
 locals {
   aws_region = "eu-west-1"
-  role_arn   = "arn:aws:iam::<your aws account id>:role/hcp-terraform-stacks"
+  role_arn   = "arn:aws:iam::288761736588:role/hcp-terraform-stacks"
 }
 
 deployment "development" {
@@ -19,7 +19,7 @@ deployment "development" {
 deployment "staging" {
   inputs = {
     region         = local.aws_region
-    name_suffix    = "development"
+    name_suffix    = "staging"
     identity_token = identity_token.aws.jwt
     role_arn       = local.role_arn
   }
