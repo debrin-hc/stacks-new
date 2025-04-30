@@ -4,10 +4,18 @@ terraform {
       source  = "hashicorp/aws"
       version = "5.90.1"
     }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "3.7.2"
+    }
   }
 }
 
 provider "aws" {
   region = "ap-south-1"
+}
+
+provider "random" {
 }
 

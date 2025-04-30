@@ -24,7 +24,7 @@
 # }
 
 component "s3_bucket" {
-  source = "./modules/s3"
+  source = "./modules/random"
 
   inputs = {
     "bucket_name"       = "test-bucket--debrin-hc"
@@ -32,7 +32,8 @@ component "s3_bucket" {
   }
 
   providers = {
-    aws    = provider.aws.this
+    # aws    = provider.aws.this
+    random = provider.random.this
   }
 }
 
