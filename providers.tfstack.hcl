@@ -16,7 +16,7 @@ provider "aws" "this" {
     
     assume_role_with_web_identity {
       role_arn           = "arn:aws:iam::288761736588:role/hcp-terraform-stacks"
-      web_identity_token = var.identity_token
+      web_identity_token = "var.identity_token"
     }
   }
 }
