@@ -8,5 +8,5 @@ resource "random_pet" "increase_resource_count" {
 ephemeral "random_password" "password" {
   length           = 16
   special          = true
-  override_special = ${var.special_chars}
+  override_special = var.special_chars
 }
