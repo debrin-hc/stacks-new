@@ -1,3 +1,4 @@
-output "role_arn" {
-  value = var.pet_prefix
+output "pet_prefix_value" {
+  value       = var.pet_prefix
+  ephemeral   = true
 }
