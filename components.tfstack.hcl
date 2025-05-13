@@ -2,7 +2,7 @@ component "random" {
   
   source = "./random"
   inputs = {
-    special_chars = var.special_chars
+    special_chars = store.varset.prefix.special_chars
   }
 
   providers = {
