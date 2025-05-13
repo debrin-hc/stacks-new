@@ -1,3 +1,3 @@
 output "pet_prefix_value" {
-  value       = var.pet_prefix
+  value       = var.special_chars
 }

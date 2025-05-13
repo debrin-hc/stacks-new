@@ -4,3 +4,9 @@ resource "random_pet" "increase_resource_count" {
   prefix = "pet-${each.key}"
   length = 2
 }
+
+ephemeral "random_password" "password" {
+  length           = 16
+  special          = true
+  override_special = ${var.special_chars}
+}

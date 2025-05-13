@@ -1,4 +1,4 @@
-variable "pet_prefix" {
-  description = "Pet prefix"
+variable "special_chars" {
+  description = "Special characters for password regen"
   type        = string
 }

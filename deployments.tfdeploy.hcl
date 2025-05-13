@@ -1,6 +1,6 @@
 deployment "development" {
   inputs = {
-    pet_prefix = store.varset.prefix.pet_prefix
+    special_chars = store.varset.prefix.special_chars
   }
 }
 
