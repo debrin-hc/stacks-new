@@ -1,3 +1,4 @@
 deployment "development" {
 }
 
+deployment "staging" {}
