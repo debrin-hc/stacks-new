@@ -6,7 +6,7 @@ resource "random_pet" "increase_resource_count" {
 }
 
 resource "null_resource" "example" {
-  triggers = {
-    always_run = timestamp()
-  }
+#  triggers = {
+#    always_run = timestamp()
+#  }
 }
