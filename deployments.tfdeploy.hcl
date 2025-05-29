@@ -1,4 +1,4 @@
 deployment "development" {
 }
 
-deployment "staging" {}
+# deployment "staging" {}
