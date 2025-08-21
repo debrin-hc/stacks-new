@@ -2,7 +2,7 @@
 
 deployment "staging" {
   inputs = {
-    stable_var = store.varset.vars_block.stable_var
+    stable_var = store.varset.vars_block.stable.stable_var
   }
 }
 
